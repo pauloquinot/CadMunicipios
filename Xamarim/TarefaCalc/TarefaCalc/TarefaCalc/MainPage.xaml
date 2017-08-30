@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TarefaCalc"
+             x:Class="TarefaCalc.MainPage">
+
+    <StackLayout>
+        <Label Text="** CALCULADORA **" 
+           VerticalOptions="Start" 
+           HorizontalOptions="Center" />
+        <Label x:Name="display" 
+               Text="" HorizontalOptions="End" 
+               FontSize="20" 
+               FontAttributes="Bold" 
+               BackgroundColor="Aquamarine"/>
+ 
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn1" Text=" 1 " Grid.Row="0" Grid.Column="0" Clicked="btn1_Clicked"/>
+            <Button x:Name="btn2" Text=" 2 " Grid.Row="0" Grid.Column="1" Clicked="btn2_Clicked"/>
+            <Button x:Name="btn3" Text=" 3 " Grid.Row="0" Grid.Column="2" Clicked="btn3_Clicked"/>
+            <Button x:Name="btn4" Text=" 4 " Grid.Row="1" Grid.Column="0" Clicked="btn4_Clicked"/>
+            <Button x:Name="btn5" Text=" 5 " Grid.Row="1" Grid.Column="1" Clicked="btn5_Clicked"/>
+            <Button x:Name="btn6" Text=" 6 " Grid.Row="1" Grid.Column="2" Clicked="btn6_Clicked"/>
+            <Button x:Name="btn7" Text=" 7 " Grid.Row="2" Grid.Column="0" Clicked="btn7_Clicked"/>
+            <Button x:Name="btn8" Text=" 8 " Grid.Row="2" Grid.Column="1" Clicked="btn8_Clicked"/>
+            <Button x:Name="btn9" Text=" 9 " Grid.Row="2" Grid.Column="2" Clicked="btn9_Clicked"/>
+            <Button x:Name="btn0" Text=" 0 " Grid.Row="3" Grid.Column="0" Clicked="btn0_Clicked"/>
+            <Button x:Name="btnPonto" Text=" . " Grid.Row="3" Grid.Column="1" Clicked="btnPonto_Clicked"/>
+            <Button x:Name="btnDel" Text=" Del " Grid.Row="3" Grid.Column="2" Clicked="btnDel_Clicked"/>
+            <Button x:Name="btnMais" Text=" + " Grid.Row="0" Grid.Column="3" Clicked="btnMais_Clicked"/>
+            <Button x:Name="btnMenos" Text=" - " Grid.Row="1" Grid.Column="3" Clicked="btnMenos_Clicked"/>
+            <Button x:Name="btnMult" Text=" * " Grid.Row="2" Grid.Column="3" Clicked="btnMult_Clicked"/>
+            <Button x:Name="btnDiv" Text=" / " Grid.Row="3" Grid.Column="3" Clicked="btnDiv_Clicked"/>
+            <Button x:Name="btnC" Text=" C " Grid.Row="4" Grid.Column="2" Clicked="btnC_Clicked"/>
+            <Button x:Name="btnIgual" Text=" = " Grid.Row="4" Grid.Column="3" Clicked="btnIgual_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
