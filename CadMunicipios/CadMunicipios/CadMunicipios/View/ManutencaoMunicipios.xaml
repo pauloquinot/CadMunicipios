@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadMunicipios.View.ManutencaoMunicipios">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Código" />
+            <Entry x:Name="edtCodigo" Text="{Binding Codigo}" IsEnabled="False" />
+
+            <Label Text="Nome" />
+            <Entry x:Name="edtNome" Text="{Binding Nome}" />
+
+            <Button Text="Salvar" Clicked="IncluirMunicipio"></Button>
+            <Button Text="Excluir" Clicked="ExcluirMunicipio"></Button>
+            <Button Text="Listar" Clicked="ListarMunicipios"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
